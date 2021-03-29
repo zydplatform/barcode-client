@@ -7,6 +7,9 @@
 
         <div class="row mt-5">
             <div class="col-xl-12 mb-5 mb-xl-0">
+              <div class="alert alert-danger" role="alert">
+                Add Company Information
+              </div>
                 <form role="form" method="POST" action="{{ route('generatebarcodes') }}">
                             @csrf
   <div class="row" style="margin-left: 3%;margin-right: 3%;">
