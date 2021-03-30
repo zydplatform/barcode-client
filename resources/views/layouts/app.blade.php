@@ -7,7 +7,7 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'GS1ugandasystem') }}</title>
+        <title>{{ config('app.name', 'GS1StandardsUganda') }}</title>
         <link href="{{ asset('argon') }}/img/brand/small.png" rel="icon" type="image/png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 

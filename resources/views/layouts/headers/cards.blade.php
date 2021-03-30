@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Membership</h5>
-                                    <span class="h5 font-weight-bold mb-0">400 (DAYS)</span>
+                                    <span class="h5 font-weight-bold mb-0">400 (DAYS LEFT)</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-info text-white rounded-circle shadow">

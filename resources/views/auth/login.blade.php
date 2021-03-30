@@ -1,9 +1,22 @@
-@extends('layouts.app', ['class' => 'bg-default'])
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@section('content')
-    @include('layouts.headers.guest')
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <div class="container mt--8 pb-5">
+        <title>{{ config('app.name', 'GS1StandardsUganda') }}</title>
+        <link href="{{ asset('argon') }}/img/brand/small.png" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+        <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container mt--0 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary shadow border-0">
@@ -14,7 +27,7 @@
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
                             <small><h3> Create new account OR Sign in </h3>
-                                <strong>Please Login here with Admin credentials</strong>
+                                <strong>Please Login here with your credentials</strong>
                             </small>
                         </div>
                         <form role="form" method="POST" action="{{ route('login') }}">
@@ -61,4 +74,5 @@
             </div>
         </div>
     </div>
-@endsection
+</body>
+</html>
