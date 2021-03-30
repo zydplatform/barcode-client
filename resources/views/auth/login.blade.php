@@ -15,7 +15,7 @@
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
     </head>
-    <body>
+    <body class="jumbotron">
     <div class="container mt--0 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small><h3> Create new account OR Sign in </h3>
+                            <small><h3>Sign In OR Register with us </h3>
                                 <strong>Please Login here with your credentials</strong>
                             </small>
                         </div>
@@ -66,7 +66,8 @@
                                 </label>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary my-4">{{ __('Sign in') }}</button>
+                                <button type="submit" class="btn btn-success my-4">{{ __('Sign in') }}</button>
+                                <a href="register"><button type="button" class="btn btn-primary my-4">{{ __('Register Company') }}</button></a>
                             </div>
                         </form>
                     </div>

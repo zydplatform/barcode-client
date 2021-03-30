@@ -1,9 +1,22 @@
-@extends('layouts.app', ['class' => 'bg-default'])
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@section('content')
-    @include('layouts.headers.guest')
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <div class="container mt--8 pb-5">
+        <title>{{ config('app.name', 'GS1StandardsUganda') }}</title>
+        <link href="{{ asset('argon') }}/img/brand/small.png" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+        <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+    </head>
+    <body class="jumbotron">
+    <div class="container mt--0 pb-5">
         <!-- Table -->
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8">
@@ -86,4 +99,5 @@
             </div>
         </div>
     </div>
-@endsection
+</body>
+</html>
