@@ -106,7 +106,7 @@
         </div>
       </div>
       <div class="form-group">
-        <label>Core Attribute Value Description</label><br>
+        <label>Core Attribute Value Description/Product Name</label><br>
           <select class="form-control"><option>AIRBRUSH CONTROL VALVE </option>
             <option>AIRBRUSH CONTROL VALVE</option><option>AIRBRUSH CONTROL VALVE</option>
             <option>AIRBRUSH CONTROL VALVE</option><option>AIRBRUSH CONTROL VALVE</option><option>AIRBRUSH CONTROL VALVE</option>

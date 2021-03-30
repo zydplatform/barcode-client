@@ -24,75 +24,64 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col" class="sort" data-sort="name">Company Name</th>
-                    <th scope="col" class="sort" data-sort="name">Product Name</th>
-                    <th scope="col" class="sort" data-sort="name">Product Price</th>
-                    <th scope="col" class="sort" data-sort="budget">Product Specifications</th>
-                    <th scope="col" class="sort" data-sort="name">Product Brand</th>
-                    <th scope="col" class="sort" data-sort="status">Quantity</th>
-                    <th scope="col" class="sort" data-sort="name">Item Reference Number</th>
-                    <th scope="col" class="sort" data-sort="name">MFG date</th>
-                    <th scope="col" class="sort" data-sort="name">EXP date</th>
+                    <th scope="col" class="sort" data-sort="name">Product Category</th>
+                    <th scope="col" class="sort" data-sort="name">Product Code</th>
+                    <th scope="col" class="sort" data-sort="name">Product Class Code</th>
+                    <th scope="col" class="sort" data-sort="status">Standard Product Class Description</th>
+                    <th scope="col" class="sort" data-sort="name">Product Brick Code</th>
+                    <th scope="col" class="sort" data-sort="name">Product Brick Description</th>
+                    <th scope="col" class="sort" data-sort="name">Core Attribute Type Code</th>
+                    <th scope="col" class="sort" data-sort="name">Core Attribute Type Code Description</th>
+                    <th scope="col" class="sort" data-sort="name">Core Attribute Value Code</th>
+                    <th scope="col" class="sort" data-sort="name">Core Attribute Value Description/Product Name</th>
+                    <th scope="col" class="sort" data-sort="name">Product Unit Price</th>
+                    <th scope="col" class="sort" data-sort="name">Your Product Description</th>
+                    <th scope="col" class="sort" data-sort="completion">Barcode Request</th>
                     <th scope="col" class="sort" data-sort="completion">Action</th>
                   </tr>
                 </thead>
                 <tbody class="list">
-                  @foreach ($companies as $company)
                   <tr>
 
                     <th scope="row">
                       
                       <div class="media align-items-center">
                         <div class="media-body">
-                          <span class="name mb-0 text-sm">{{$company->name}}</span>
+                          <span class="name mb-0 text-sm">Arts/Crafts/Needlework</span>
                         </div>
                       </div>
                       
                     </th>
                     
-                    @foreach ($products as $product)
+                  
                     <td class="budget">
-                      {{$product->productname}}
+                    70000000
                     </td>
                     <td class="budget">
-                      {{$product->productprice}}
+                    70010200
                     </td>
-                    <td>{{$product->productdetails}}</td>
-                    <td class="budget">{{$product->productbrand}}</td>
-                    <td class="budget">{{$product->productqty}}</td>
-                    <td class="budget">{{$product->item_reference_number}}</td>
-                    <td class="budget">{{$product->mfgdate}}</td>
-                    <td class="budget">{{$product->expdate}}</td>
+                    <td class="budget">Airbrushing Supplies</td>
+                    <td class="budget">10001686</td>
+                    <td class="budget">Airbrushes (Powered)</td>
+                    <td class="budget">20001349</td>
+                    <td class="budget">Type of Airbrushing Equipment – Replacement Part/Accessory</td>
+                    <td class="budget">30008542</td>
+                    <td class="budget">AIRBRUSH CONTROL VALVE</td>
+                    <td class="budget">1200</td>
+                    <td class="budget">African Air cotrol brush blue in color</td>
+                    <td class="budget"><button class="btn btn-sm btn-warning">Make Barcode Request</button></td>
 <!--                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-warning"></i>
                         <span class="status">pending</span>
                       </span>
                     </td> -->
-                    <td>    <!-- delete product --><a data-toggle="modal" data-target="#deleteModal" title="delete"><i class="p-2 fa fa-trash" style="color: #ff5721;cursor: pointer;"></i></a>
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><strong style="color: #ff5721;">Delete Company</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body" style="color: rgba(255,10,51,1);">Are you sure you want to delete this Company ?</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-md btn-warning" name="delete"><a href="#" style="color: white;">Confirm Delete</a></button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- delete product --></td>
+                    <td>    <!-- delete product -->
+
+                      <button class="btn btn-sm btn-warning">View Product</button></td>
                   </tr>
                   
                 </tbody>
-                @endforeach
-                @endforeach
               </table>
             </div>
             <!-- Card footer -->
