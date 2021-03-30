@@ -26,7 +26,11 @@
                         <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/brand/small.png"></span></div>
                     </div>
                     <div class="card-body px-lg-5 py-lg-5">
-                        
+                        <div class="text-center text-muted mb-4">
+                            <small><h3>Register with us OR Sign In</h3>
+                                <strong>Please register to create an account </strong>
+                            </small>
+                        </div>
                         <form role="form" method="POST" action="{{ route('register') }}">
                             @csrf
 
@@ -91,7 +95,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary mt-4">{{ __('Create account') }}</button>
+                                <button type="submit" class="btn btn-success">{{ __('Create account') }}</button>
+                                <a href="login"><button type="button" class="btn btn-primary  mt-0">{{ __('Sign In') }}</button></a>
                             </div>
                         </form>
                     </div>
